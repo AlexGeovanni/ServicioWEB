@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://localhost:44334/Calcula_AreaWebService.asmx?wsdl" docRef="https://localhost:44334/Calcula_AreaWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://localhost:44334/Calcula_AreaWebService.asmx" xmlns:q1="http://tempuri.org/" binding="q1:Calcula_AreaWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://localhost:44334/Calcula_AreaWebService.asmx" xmlns:q2="http://tempuri.org/" binding="q2:Calcula_AreaWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

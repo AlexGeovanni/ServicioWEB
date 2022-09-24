@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Cuadrado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Dato1" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CuadradoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CuadradoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Rectagulo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Base" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Altura" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RectaguloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RectaguloResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Circulo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Radio" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CirculoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CirculoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CuadradoSoapIn">
+    <wsdl:part name="parameters" element="tns:Cuadrado" />
+  </wsdl:message>
+  <wsdl:message name="CuadradoSoapOut">
+    <wsdl:part name="parameters" element="tns:CuadradoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RectaguloSoapIn">
+    <wsdl:part name="parameters" element="tns:Rectagulo" />
+  </wsdl:message>
+  <wsdl:message name="RectaguloSoapOut">
+    <wsdl:part name="parameters" element="tns:RectaguloResponse" />
+  </wsdl:message>
+  <wsdl:message name="CirculoSoapIn">
+    <wsdl:part name="parameters" element="tns:Circulo" />
+  </wsdl:message>
+  <wsdl:message name="CirculoSoapOut">
+    <wsdl:part name="parameters" element="tns:CirculoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Calcula_AreaWebServiceSoap">
+    <wsdl:operation name="Cuadrado">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">metodo que calcula el area de cuadrado</wsdl:documentation>
+      <wsdl:input message="tns:CuadradoSoapIn" />
+      <wsdl:output message="tns:CuadradoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Rectagulo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">metodo que calcula el area de Rectagulo</wsdl:documentation>
+      <wsdl:input message="tns:RectaguloSoapIn" />
+      <wsdl:output message="tns:RectaguloSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Circulo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">metodo que calcula el area de Circulo</wsdl:documentation>
+      <wsdl:input message="tns:CirculoSoapIn" />
+      <wsdl:output message="tns:CirculoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Calcula_AreaWebServiceSoap" type="tns:Calcula_AreaWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Cuadrado">
+      <soap:operation soapAction="http://tempuri.org/Cuadrado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rectagulo">
+      <soap:operation soapAction="http://tempuri.org/Rectagulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Circulo">
+      <soap:operation soapAction="http://tempuri.org/Circulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Calcula_AreaWebServiceSoap12" type="tns:Calcula_AreaWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Cuadrado">
+      <soap12:operation soapAction="http://tempuri.org/Cuadrado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Rectagulo">
+      <soap12:operation soapAction="http://tempuri.org/Rectagulo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Circulo">
+      <soap12:operation soapAction="http://tempuri.org/Circulo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Calcula_AreaWebService">
+    <wsdl:port name="Calcula_AreaWebServiceSoap" binding="tns:Calcula_AreaWebServiceSoap">
+      <soap:address location="https://localhost:44334/Calcula_AreaWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Calcula_AreaWebServiceSoap12" binding="tns:Calcula_AreaWebServiceSoap12">
+      <soap12:address location="https://localhost:44334/Calcula_AreaWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
