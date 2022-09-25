@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="DOetZMYXJsktr7gBH1Mr1V4oZQ4=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="ypfHPMTxtGPHqP0zRyWRAAHqzyE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="Calcula_AreaWebServiceSoap">
       <properties>
@@ -221,7 +221,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="Calcula_AreaWebServiceSoap" contract="AreRectagulo_ServiceReference.Calcula_AreaWebServiceSoap" bindingType="basicHttpBinding" address="https://localhost:44334/Calcula_AreaWebService.asmx" bindingConfiguration="Calcula_AreaWebServiceSoap">
+    <endpoint name="Calcula_AreaWebServiceSoap" contract="AreTriangulo_ServiceReference.Calcula_AreaWebServiceSoap" bindingType="basicHttpBinding" address="https://localhost:44334/Calcula_AreaWebService.asmx" bindingConfiguration="Calcula_AreaWebServiceSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>https://localhost:44334/Calcula_AreaWebService.asmx</serializedValue>
@@ -236,7 +236,7 @@
           <serializedValue>Calcula_AreaWebServiceSoap</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AreRectagulo_ServiceReference.Calcula_AreaWebServiceSoap</serializedValue>
+          <serializedValue>AreTriangulo_ServiceReference.Calcula_AreaWebServiceSoap</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

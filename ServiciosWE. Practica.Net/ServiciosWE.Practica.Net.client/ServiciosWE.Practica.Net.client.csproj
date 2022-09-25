@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\AreRectagulo_ServiceReference\Reference.cs">
+    <Compile Include="Connected Services\AreTriangulo_ServiceReference\AreTriangulo_ServiceReference.cs" />
+    <Compile Include="Connected Services\AreTriangulo_ServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -72,11 +73,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\Calcula_AreaWebService.wsdl" />
-    <None Include="Connected Services\AreRectagulo_ServiceReference\ServiciosWE.Practica.Net.client.AreRectagulo_ServiceReference.CirculoResponse.datasource">
+    <None Include="Connected Services\AreTriangulo_ServiceReference\Calcula_AreaWebService.wsdl" />
+    <None Include="Connected Services\AreTriangulo_ServiceReference\ServiciosWE.Practica.Net.client.AreRectagulo_ServiceReference.CirculoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\ServiciosWE.Practica.Net.client.AreRectagulo_ServiceReference.CuadradoResponse.datasource">
+    <None Include="Connected Services\AreTriangulo_ServiceReference\ServiciosWE.Practica.Net.client.AreRectagulo_ServiceReference.CuadradoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -96,19 +97,19 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\AreRectagulo_ServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\AreTriangulo_ServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\Calcula_AreaWebService.disco" />
+    <None Include="Connected Services\AreTriangulo_ServiceReference\Calcula_AreaWebService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\AreTriangulo_ServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\AreTriangulo_ServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\AreRectagulo_ServiceReference\Reference.svcmap">
+    <None Include="Connected Services\AreTriangulo_ServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

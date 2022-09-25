@@ -19,9 +19,9 @@ namespace ServiciosWE.Practica.Net.client
 
         private void Calculabutton_Click(object sender, EventArgs e)
         {
-            AreRectagulo_ServiceReference.Calcula_AreaWebServiceSoapClient WebS = new AreRectagulo_ServiceReference.Calcula_AreaWebServiceSoapClient();
+            AreTriangulo_ServiceReference.Calcula_AreaWebServiceSoapClient WebS = new AreTriangulo_ServiceReference.Calcula_AreaWebServiceSoapClient();
 
-            Resultado.Text = WebS.Rectagulo(BasetextBox1.Text, AlturatextBox2.Text);
+            Resultado.Text = WebS.Triangulo (BasetextBox1.Text, AlturatextBox2.Text);
 
         }
     }
