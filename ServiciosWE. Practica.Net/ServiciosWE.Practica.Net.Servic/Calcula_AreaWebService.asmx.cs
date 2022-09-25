@@ -16,6 +16,7 @@ namespace ServiciosWE.Practica.Net.Servic
     // [System.Web.Script.Services.ScriptService]
     public class Calcula_AreaWebService : System.Web.Services.WebService
     {
+
         /*-------------------------CUADRADO------------------------------------*/
         /// <summary>
         /// Metodo que calcula el area de un Cuadrado
@@ -25,14 +26,14 @@ namespace ServiciosWE.Practica.Net.Servic
         [WebMethod (Description ="metodo que calcula el area de cuadrado")]
         public string Cuadrado(string Dato1)
         {
-            
             double resultado = Math.Pow(double.Parse(Dato1), 2);
             return "Area del cuadrado es: " + resultado;
         }
 
+
         /*-------------------------TRIANGULO------------------------------------*/
         /// <summary>
-        /// Metodo que calcula el area de un rectangulo
+        /// Metodo que calcula el area de un Tringulo
         /// </summary>
         /// <param name="Base">Entrada de dato tipo string</param>
         /// <param name="Altura">Entrada de dato tipo string</param>
@@ -44,6 +45,7 @@ namespace ServiciosWE.Practica.Net.Servic
             resultado = Math.Round(resultado, 2);
             return "Area del Triangulo es: " + resultado;
         }
+
 
         /*-------------------------CIRCULO------------------------------------*/
         /// <summary>
@@ -58,6 +60,5 @@ namespace ServiciosWE.Practica.Net.Servic
             resultado = Math.Round(resultado, 2);
             return "Area del Circulo es: " + resultado;
         }
-
     }
 }
