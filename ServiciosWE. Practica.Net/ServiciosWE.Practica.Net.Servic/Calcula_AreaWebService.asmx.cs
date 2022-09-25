@@ -29,19 +29,20 @@ namespace ServiciosWE.Practica.Net.Servic
             double resultado = Math.Pow(double.Parse(Dato1), 2);
             return "Area del cuadrado es: " + resultado;
         }
-        /*-------------------------RECTAGULO------------------------------------*/
+
+        /*-------------------------TRIANGULO------------------------------------*/
         /// <summary>
         /// Metodo que calcula el area de un rectangulo
         /// </summary>
         /// <param name="Base">Entrada de dato tipo string</param>
         /// <param name="Altura">Entrada de dato tipo string</param>
         /// <returns>Devuelve un valor de tipo double</returns>
-        [WebMethod(Description = "metodo que calcula el area de Rectagulo")]
-        public string Rectagulo(string Base, string Altura)
+        [WebMethod(Description = "metodo que calcula el area de Triangulo")]
+        public string Triangulo(string Base, string Altura)
         {
-            double resultado = double.Parse(Base) * double.Parse(Altura);
+            double resultado = (double.Parse(Base) * double.Parse(Altura))/2;
             resultado = Math.Round(resultado, 2);
-            return "Area del Rectagulo es: " + resultado;
+            return "Area del Triangulo es: " + resultado;
         }
 
         /*-------------------------CIRCULO------------------------------------*/
